@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY BLOG</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="blogSection">
+            <form id="blogForm">
+                <input type="text" id="userId" name="userId" placeholder="User Id"><br>
+                <input type="text" id="title" name="title" placeholder="Title"><br>
+                <textarea id="body" name="body" placeholder="Your message"></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div>
+                <p id="blogPost"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
