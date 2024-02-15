@@ -6,19 +6,44 @@
     <title>MY BLOG</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="blogSection">
-            <form id="blogForm">
-                <input type="text" id="userId" name="userId" placeholder="User Id"><br>
-                <input type="text" id="title" name="title" placeholder="Title"><br>
-                <textarea id="body" name="body" placeholder="Your message"></textarea><br>
+            <h3>My Blog</h3>
+            <div class="flexContainer">
+                <div class="postBlog">
+                    <h5>POST a blog post</h5>
+                    <form id="blogForm">
+                
+                        <input type="text" id="userId" name="userId" placeholder="User Id"><br>
+        
+                        <input type="text" id="title" name="title" placeholder="Title"><br>
+        
+                        <textarea id="body" name="body" placeholder="Your message"></textarea><br>
+        
+                        <button type="submit" >Submit</button>
+                    </form>
+                    <div>
+                        <p id="blogPost"></p>
+                    </div>
+                </div>
+                <div class="getBlog">
+                    <h5>GET & UPDATE A BLOG POST</h5>
+                    <form>
+                        <!-- <input type="text" id="userId" name="userId" placeholder="User Id"><br> -->
+        
+                        <input type="text" id="title" name="title" placeholder="Title"><br>
+        
+                        <!-- <textarea id="body" name="body" placeholder="Your message"></textarea><br> -->
+        
+                        <button type="submit" >Submit</button> 
+                    </form>
 
-                <button type="submit">Submit</button>
-            </form>
-            <div>
-                <p id="blogPost"></p>
+                </div>
             </div>
         </div>
     </div>
